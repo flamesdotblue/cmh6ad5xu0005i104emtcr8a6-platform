@@ -5,8 +5,8 @@ function Header() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full">
-      <div className="absolute inset-0 backdrop-blur supports-[backdrop-filter]:bg-white/50 border-b" aria-hidden />
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <div className="absolute inset-0 bg-white/70 backdrop-blur border-b" aria-hidden />
       <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2 group">
           <div className="h-9 w-9 rounded-md bg-gradient-to-br from-emerald-500 to-indigo-600 grid place-items-center text-white font-bold shadow-md">AS</div>
@@ -29,7 +29,7 @@ function Header() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t bg-white/70 backdrop-blur">
+        <div className="md:hidden border-t bg-white/80 backdrop-blur">
           <div className="px-6 py-3 flex flex-col gap-3 text-sm">
             <a href="#home" className="py-1" onClick={() => setOpen(false)}>Home</a>
             <a href="#services" className="py-1" onClick={() => setOpen(false)}>Services</a>
