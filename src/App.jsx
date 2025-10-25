@@ -6,19 +6,21 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-white text-slate-900 font-[Inter]">
       <Header />
       <main>
         <Hero />
         <Services />
         <About />
       </main>
-      <footer className="border-t mt-16">
-        <div className="max-w-7xl mx-auto px-6 py-8 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+      <footer className="relative overflow-hidden mt-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900" />
+        <div className="relative max-w-7xl mx-auto px-6 py-10 text-slate-300 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} AS Consultancy Services India Pvt. Ltd. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#services" className="hover:text-slate-900">Services</a>
-            <a href="#about" className="hover:text-slate-900">About</a>
+            <a href="#services" className="hover:text-white">Services</a>
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
           </div>
         </div>
       </footer>
